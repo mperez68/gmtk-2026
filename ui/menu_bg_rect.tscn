@@ -3,7 +3,7 @@
 [ext_resource type="Texture2D" uid="uid://dy6wuhqt3vw5n" path="res://assets/menu/panel.png" id="1_d5gnt"]
 
 [sub_resource type="Gradient" id="Gradient_e3ffy"]
-colors = PackedColorArray(0.14117648, 0.14117648, 0.14117648, 1, 0.43137255, 0.43137255, 0.43137255, 1)
+colors = PackedColorArray(0.21568628, 0.16470589, 0.31764707, 1, 0.22745098, 0.3137255, 0.40784314, 1)
 
 [sub_resource type="GradientTexture2D" id="GradientTexture2D_1by8w"]
 gradient = SubResource("Gradient_e3ffy")

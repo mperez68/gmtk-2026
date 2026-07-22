@@ -1,9 +1,9 @@
 [gd_resource type="Theme" format=3 uid="uid://dxyu51du6xt8k"]
 
 [ext_resource type="Texture2D" uid="uid://cs6oek27utpgh" path="res://assets/menu/slider.png" id="1_1cp1y"]
-[ext_resource type="FontFile" uid="uid://dt60o7lhqi5oy" path="res://assets/fonts/Everyday-Standard-All/Everyday-Standard-All/Everyday_Standard_Original.ttf" id="1_6x7we"]
 [ext_resource type="Texture2D" uid="uid://dniwg8glvqcje" path="res://assets/menu/button.png" id="1_glb6i"]
 [ext_resource type="Texture2D" uid="uid://dy6wuhqt3vw5n" path="res://assets/menu/panel.png" id="3_4bj61"]
+[ext_resource type="FontFile" uid="uid://wylex0o4w5jx" path="res://assets/fonts/Everyday-Tiny-All/Everyday-Tiny-All/Everyday_Tiny_Bold_Original.ttf" id="4_4bj61"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_spcu4"]
 atlas = ExtResource("1_glb6i")
@@ -42,11 +42,15 @@ atlas = SubResource("CompressedTexture2D_4eg3f")
 region = Rect2(0, 72, 24, 24)
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_ycp3f"]
+content_margin_left = 4.0
+content_margin_top = 4.0
+content_margin_right = 4.0
+content_margin_bottom = 4.0
 texture = SubResource("AtlasTexture_xt6ps")
-texture_margin_left = 4.0
-texture_margin_top = 4.0
-texture_margin_right = 4.0
-texture_margin_bottom = 4.0
+texture_margin_left = 8.0
+texture_margin_top = 8.0
+texture_margin_right = 8.0
+texture_margin_bottom = 8.0
 axis_stretch_horizontal = 1
 axis_stretch_vertical = 1
 
@@ -58,11 +62,15 @@ atlas = SubResource("CompressedTexture2D_qtimg")
 region = Rect2(0, 48, 24, 24)
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_fleop"]
+content_margin_left = 4.0
+content_margin_top = 4.0
+content_margin_right = 4.0
+content_margin_bottom = 4.0
 texture = SubResource("AtlasTexture_a3mi0")
-texture_margin_left = 4.0
-texture_margin_top = 4.0
-texture_margin_right = 4.0
-texture_margin_bottom = 4.0
+texture_margin_left = 8.0
+texture_margin_top = 8.0
+texture_margin_right = 8.0
+texture_margin_bottom = 8.0
 axis_stretch_horizontal = 1
 axis_stretch_vertical = 1
 
@@ -90,45 +98,49 @@ atlas = SubResource("CompressedTexture2D_wiyjb")
 region = Rect2(0, 0, 24, 24)
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_shs6w"]
+content_margin_left = 4.0
+content_margin_top = 4.0
+content_margin_right = 4.0
+content_margin_bottom = 4.0
 texture = SubResource("AtlasTexture_g2hqt")
-texture_margin_left = 4.0
-texture_margin_top = 4.0
-texture_margin_right = 4.0
-texture_margin_bottom = 4.0
+texture_margin_left = 8.0
+texture_margin_top = 8.0
+texture_margin_right = 8.0
+texture_margin_bottom = 8.0
 axis_stretch_horizontal = 1
 axis_stretch_vertical = 1
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_5o4lr"]
 atlas = ExtResource("1_1cp1y")
-region = Rect2(6, 25, 4, 5)
+region = Rect2(6, 22, 4, 5)
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_4bj61"]
 load_path = "res://.godot/imported/slider.png-3cf942f5400c79d34d450f149ad4c14c.ctex"
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_ffnig"]
 atlas = SubResource("CompressedTexture2D_4bj61")
-region = Rect2(6, 33, 4, 5)
+region = Rect2(6, 29, 4, 5)
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_5o4lr"]
 load_path = "res://.godot/imported/slider.png-3cf942f5400c79d34d450f149ad4c14c.ctex"
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_4eg3f"]
 atlas = SubResource("CompressedTexture2D_5o4lr")
-region = Rect2(6, 41, 4, 5)
+region = Rect2(6, 36, 4, 5)
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_5kya6"]
 load_path = "res://.godot/imported/slider.png-3cf942f5400c79d34d450f149ad4c14c.ctex"
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_75w20"]
 atlas = SubResource("CompressedTexture2D_5kya6")
-region = Rect2(7, 49, 2, 5)
+region = Rect2(7, 43, 2, 5)
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_1cp1y"]
 load_path = "res://.godot/imported/slider.png-3cf942f5400c79d34d450f149ad4c14c.ctex"
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_glb6i"]
 atlas = SubResource("CompressedTexture2D_1cp1y")
-region = Rect2(0, 9, 16, 5)
+region = Rect2(0, 8, 16, 5)
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_4bj61"]
 texture = SubResource("AtlasTexture_glb6i")
@@ -146,7 +158,7 @@ load_path = "res://.godot/imported/slider.png-3cf942f5400c79d34d450f149ad4c14c.c
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_4bj61"]
 atlas = SubResource("CompressedTexture2D_glb6i")
-region = Rect2(0, 17, 16, 5)
+region = Rect2(0, 15, 16, 5)
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_ffnig"]
 texture = SubResource("AtlasTexture_4bj61")
@@ -176,7 +188,7 @@ axis_stretch_vertical = 1
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_ljax6"]
 atlas = ExtResource("3_4bj61")
-region = Rect2(0, 0, 16, 16)
+region = Rect2(0, 32, 16, 16)
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_pscy7"]
 content_margin_left = 6.0
@@ -192,8 +204,11 @@ axis_stretch_horizontal = 1
 axis_stretch_vertical = 1
 
 [resource]
-default_font = ExtResource("1_6x7we")
-default_font_size = 6
+default_font = ExtResource("4_4bj61")
+default_font_size = 4
+Button/colors/font_color = Color(0.9607843, 0.9647059, 0.8745098, 1)
+Button/colors/font_outline_color = Color(0.21568628, 0.16470589, 0.31764707, 1)
+Button/constants/outline_size = 4
 Button/styles/disabled = SubResource("StyleBoxTexture_srpbi")
 Button/styles/focus = SubResource("StyleBoxTexture_75w20")
 Button/styles/hover = SubResource("StyleBoxTexture_ycp3f")
@@ -208,6 +223,9 @@ HSlider/icons/tick = SubResource("AtlasTexture_75w20")
 HSlider/styles/grabber_area = SubResource("StyleBoxTexture_4bj61")
 HSlider/styles/grabber_area_highlight = SubResource("StyleBoxTexture_ffnig")
 HSlider/styles/slider = SubResource("StyleBoxTexture_j635x")
+Label/colors/font_color = Color(0.9607843, 0.9647059, 0.8745098, 1)
+Label/colors/font_outline_color = Color(0.21568628, 0.16470589, 0.31764707, 1)
+Label/constants/outline_size = 1
 MarginContainer/constants/margin_bottom = 8
 MarginContainer/constants/margin_left = 16
 MarginContainer/constants/margin_right = 16
