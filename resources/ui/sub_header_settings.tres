@@ -1,0 +1,7 @@
+[gd_resource type="LabelSettings" format=3 uid="uid://bgghdhgj1v8uh"]
+
+[ext_resource type="FontFile" uid="uid://cj0b2irgso1vq" path="res://assets/fonts/Everyday-Ample-All/Everyday-Ample-All/Everyday_Ample_Bold.ttf" id="1_qygds"]
+
+[resource]
+font = ExtResource("1_qygds")
+font_size = 9
