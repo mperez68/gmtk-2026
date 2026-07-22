@@ -1,0 +1,102 @@
+[gd_scene format=3 uid="uid://cega02kur75u7"]
+
+[ext_resource type="LabelSettings" uid="uid://x6yphufd1ppd" path="res://resources/ui/header_settings.tres" id="1_wstss"]
+[ext_resource type="Script" uid="uid://cnfygu22ayce0" path="res://ui/scripts/impact_label.gd" id="2_wnkau"]
+
+[sub_resource type="Animation" id="Animation_3pu6m"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:self_modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 1)]
+}
+
+[sub_resource type="Animation" id="Animation_nqqua"]
+resource_name = "hide"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:self_modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 0)]
+}
+
+[sub_resource type="Animation" id="Animation_wnkau"]
+resource_name = "show"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:self_modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 1)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_0yv0b"]
+_data = {
+&"RESET": SubResource("Animation_3pu6m"),
+&"hide": SubResource("Animation_nqqua"),
+&"show": SubResource("Animation_wnkau")
+}
+
+[sub_resource type="Gradient" id="Gradient_wnkau"]
+colors = PackedColorArray(0.9607843, 0.9647059, 0.8745098, 1, 0.21568628, 0.16470589, 0.31764707, 0)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_1by8w"]
+gradient = SubResource("Gradient_wnkau")
+width = 8
+height = 8
+fill = 1
+fill_from = Vector2(0.5, 0.5)
+fill_to = Vector2(0.5, 0)
+
+[sub_resource type="Gradient" id="Gradient_3pu6m"]
+colors = PackedColorArray(1, 1, 1, 1, 0, 0, 0, 0)
+
+[node name="ImpactLabel" type="Label" unique_id=1419909306]
+offset_right = 1.0
+offset_bottom = 16.0
+size_flags_horizontal = 4
+label_settings = ExtResource("1_wstss")
+horizontal_alignment = 1
+vertical_alignment = 1
+script = ExtResource("2_wnkau")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=1727118790]
+unique_name_in_owner = true
+libraries/ = SubResource("AnimationLibrary_0yv0b")
+autoplay = &"hide"
+
+[node name="CPUParticles2D" type="CPUParticles2D" parent="." unique_id=302172150]
+unique_name_in_owner = true
+emitting = false
+amount = 32
+texture = SubResource("GradientTexture2D_1by8w")
+lifetime = 2.0
+one_shot = true
+explosiveness = 1.0
+emission_shape = 3
+emission_rect_extents = Vector2(8, 8)
+spread = 180.0
+gravity = Vector2(0, 0)
+angular_velocity_min = -180.0
+angular_velocity_max = 180.0
+orbit_velocity_min = -0.1
+orbit_velocity_max = 0.1
+color_ramp = SubResource("Gradient_3pu6m")

@@ -1,6 +1,6 @@
 [gd_resource type="LabelSettings" format=3 uid="uid://vgt8qx0a0bxr"]
 
-[ext_resource type="FontFile" uid="uid://bdq32xjhbosyj" path="res://assets/fonts/Everyday-Tiny-All/Everyday-Tiny-All/Everyday_Tiny_Original.ttf" id="1_5sfep"]
+[ext_resource type="FontFile" uid="uid://wylex0o4w5jx" path="res://assets/fonts/Everyday-Tiny-All/Everyday-Tiny-All/Everyday_Tiny_Bold_Original.ttf" id="1_5sfep"]
 
 [resource]
 font = ExtResource("1_5sfep")

@@ -1,0 +1,80 @@
+[gd_scene format=3 uid="uid://c8grhwl66njtm"]
+
+[ext_resource type="PackedScene" uid="uid://bmjhjsstxqdyg" path="res://ui/menu_bg_rect.tscn" id="1_6ffwr"]
+[ext_resource type="Script" uid="uid://2clx05xgrr26" path="res://main_scenes/scripts/instructions_screen.gd" id="1_jj0b2"]
+[ext_resource type="PackedScene" uid="uid://d30huo8tmiem5" path="res://main_scenes/metagame.tscn" id="2_al0cx"]
+[ext_resource type="PackedScene" uid="uid://cega02kur75u7" path="res://ui/impact_label.tscn" id="3_08ije"]
+
+[node name="InstructionsScreen" type="Control" unique_id=890376067 node_paths=PackedStringArray("ordered_text")]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_jj0b2")
+next_scene = ExtResource("2_al0cx")
+ordered_text = [NodePath("CenterContainer/VBoxContainer/HBoxContainer/ImpactLabel"), NodePath("CenterContainer/VBoxContainer/HBoxContainer/ImpactLabel2"), NodePath("CenterContainer/VBoxContainer/HBoxContainer2/ImpactLabel"), NodePath("CenterContainer/VBoxContainer/HBoxContainer2/ImpactLabel2"), NodePath("CenterContainer/VBoxContainer/ImpactLabel"), NodePath("CenterContainer/VBoxContainer/ImpactLabel2"), NodePath("CenterContainer/VBoxContainer/ImpactLabel3")]
+
+[node name="MenuBgRect" parent="." unique_id=1389212552 instance=ExtResource("1_6ffwr")]
+layout_mode = 0
+anchors_preset = 0
+anchor_right = 0.0
+anchor_bottom = 0.0
+grow_horizontal = 1
+grow_vertical = 1
+
+[node name="Timer" type="Timer" parent="." unique_id=1698046016]
+unique_name_in_owner = true
+autostart = true
+
+[node name="CenterContainer" type="CenterContainer" parent="." unique_id=1303670619]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="CenterContainer" unique_id=963304248]
+layout_mode = 2
+alignment = 1
+
+[node name="HBoxContainer" type="HBoxContainer" parent="CenterContainer/VBoxContainer" unique_id=792395682]
+layout_mode = 2
+alignment = 1
+
+[node name="ImpactLabel" parent="CenterContainer/VBoxContainer/HBoxContainer" unique_id=1419909306 instance=ExtResource("3_08ije")]
+layout_mode = 2
+text = "CANOODLE"
+
+[node name="ImpactLabel2" parent="CenterContainer/VBoxContainer/HBoxContainer" unique_id=58922845 instance=ExtResource("3_08ije")]
+layout_mode = 2
+text = "THROUGH"
+
+[node name="HBoxContainer2" type="HBoxContainer" parent="CenterContainer/VBoxContainer" unique_id=1171014718]
+layout_mode = 2
+alignment = 1
+
+[node name="ImpactLabel" parent="CenterContainer/VBoxContainer/HBoxContainer2" unique_id=1014924396 instance=ExtResource("3_08ije")]
+layout_mode = 2
+text = "QUANTUM"
+
+[node name="ImpactLabel2" parent="CenterContainer/VBoxContainer/HBoxContainer2" unique_id=44591877 instance=ExtResource("3_08ije")]
+layout_mode = 2
+text = "SPACE"
+
+[node name="ImpactLabel" parent="CenterContainer/VBoxContainer" unique_id=842320957 instance=ExtResource("3_08ije")]
+layout_mode = 2
+text = "A = DO THING"
+
+[node name="ImpactLabel2" parent="CenterContainer/VBoxContainer" unique_id=817078604 instance=ExtResource("3_08ije")]
+layout_mode = 2
+text = "B = DO A DIFFERENT
+BUT SIMILAR THING"
+
+[node name="ImpactLabel3" parent="CenterContainer/VBoxContainer" unique_id=1241047931 instance=ExtResource("3_08ije")]
+layout_mode = 2
+text = "PRESS ANY KEY TO PROCEED"
+
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

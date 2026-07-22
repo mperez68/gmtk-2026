@@ -1,6 +1,6 @@
 [gd_resource type="LabelSettings" format=3 uid="uid://x6yphufd1ppd"]
 
-[ext_resource type="FontFile" uid="uid://cmqot4sawa1gu" path="res://assets/fonts/Everyday-Vast-All/Everyday-Vast-All/Everyday_Vast_Black.ttf" id="1_iwxya"]
+[ext_resource type="FontFile" uid="uid://ctf76cqi3rmus" path="res://assets/fonts/Everyday-Vast-All/Everyday-Vast-All/Everyday_Vast_Bold.ttf" id="1_iwxya"]
 
 [resource]
 font = ExtResource("1_iwxya")

@@ -1,0 +1,30 @@
+[gd_scene format=3 uid="uid://d30huo8tmiem5"]
+
+[ext_resource type="PackedScene" uid="uid://bmjhjsstxqdyg" path="res://ui/menu_bg_rect.tscn" id="1_2f6pu"]
+[ext_resource type="PackedScene" uid="uid://bhynfxt156sqi" path="res://elements/rocket.tscn" id="2_objeo"]
+[ext_resource type="PackedScene" uid="uid://dxcxjogt2e016" path="res://elements/portal.tscn" id="3_objeo"]
+
+[node name="Metagame" type="Node2D" unique_id=1143703954]
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=733647547]
+layer = -9999
+
+[node name="MenuBgRect" parent="CanvasLayer" unique_id=1389212552 instance=ExtResource("1_2f6pu")]
+
+[node name="Rocket" parent="." unique_id=1763732652 instance=ExtResource("2_objeo")]
+position = Vector2(25, 102)
+
+[node name="Portal" parent="." unique_id=329023252 instance=ExtResource("3_objeo")]
+position = Vector2(24, 99)
+animation = &"default"
+autoplay = ""
+frame = 0
+frame_progress = 0.0
+opening = false
+
+[node name="Portal2" parent="." unique_id=240697328 instance=ExtResource("3_objeo")]
+position = Vector2(70, 98)
+animation = &"default"
+autoplay = ""
+frame = 0
+frame_progress = 0.0

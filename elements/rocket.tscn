@@ -1,0 +1,24 @@
+[gd_scene format=3 uid="uid://bhynfxt156sqi"]
+
+[ext_resource type="Texture2D" uid="uid://yc7ll82fkt46" path="res://assets/sprites/rocket.png" id="1_swfwk"]
+[ext_resource type="Script" uid="uid://cec8slyr57iob" path="res://elements/scripts/rocket.gd" id="2_nbgfi"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_3m4jf"]
+atlas = ExtResource("1_swfwk")
+region = Rect2(0, 0, 32, 16)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_1by8w"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_3m4jf")
+}],
+"loop": 1,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="Rocket" type="AnimatedSprite2D" unique_id=1763732652]
+z_index = 1
+sprite_frames = SubResource("SpriteFrames_1by8w")
+script = ExtResource("2_nbgfi")
